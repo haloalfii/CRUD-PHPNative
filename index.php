@@ -11,14 +11,17 @@
 </head>
 
 <body>
-
   <div class="container">
+    <br/>
+    <br/>
+    <br/>
     <h2>CRUD PHP-Native</h2>
     <p>CRUD dengan menggunakan Php Native</p>
     <table class="table table-hover">
       <thead>
         <tr>
           <th>No</th>
+          <th>Cust Id</th>
           <th>Name</th>
           <th>Address</th>
           <th>City</th>
@@ -38,14 +41,15 @@
         ?>
           <tr>
             <td><?php echo $number++ ?></td>
+            <td><?php echo $row['CustomerID'] ?></td>
             <td><?php echo $row['Name'] ?></td>
             <td><?php echo $row['Address'] ?></td>
             <td><?php echo $row['City'] ?></td>
             <td><?php echo $row['PostCode'] ?></td>
             <td><?php echo $row['City'] ?></td>
             <td>
-              <button type="button" class="btn btn-outline-warning">Edit</button>
-              <button type="button" class="btn btn-outline-danger">Delete</button>
+              <a href="edit-data.php?CustomerID=<?=$row['CustomerID']?>" class="btn btn-outline-warning">Edit</a>
+              <a href="edit-mahasiswa.php?CustomerID=<?=$row['CustomerID']?>" class="btn btn-outline-danger">Delete</a>
             </td>
           </tr>
         <?php
@@ -53,7 +57,7 @@
         ?>
       </tbody>
     </table>
-    <button type="button" class="btn btn-outline-success">Input Data</button>
+    <a class="btn btn-outline-success">Input Data</a>
   </div>
 
 </body>
