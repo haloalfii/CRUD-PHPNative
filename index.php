@@ -49,7 +49,7 @@
             <td><?php echo $row['City'] ?></td>
             <td>
               <a href="edit-data.php?CustomerID=<?=$row['CustomerID']?>" class="btn btn-outline-warning">Edit</a>
-              <a href="edit-mahasiswa.php?CustomerID=<?=$row['CustomerID']?>" class="btn btn-outline-danger">Delete</a>
+              <a href="hapus-data.php?CustomerID=<?=$row['CustomerID']?>" class="btn btn-outline-danger">Delete</a>
             </td>
           </tr>
         <?php
@@ -57,7 +57,7 @@
         ?>
       </tbody>
     </table>
-    <a class="btn btn-outline-success">Input Data</a>
+    <a href="input-data.php" class="btn btn-outline-success">Input Data</a>
   </div>
 
 </body>

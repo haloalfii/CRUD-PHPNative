@@ -12,7 +12,6 @@ $id = $_GET['CustomerID'];
 $data = $crud->GetByIdData($id);
 foreach ($data as $data) {
 ?>
-
     <!DOCTYPE html>
     <html lang="en">
 
